@@ -1,7 +1,7 @@
 #include<iostream>
 #include<math.h>
 using namespace std;
-
+/*
 void merge(int arr[], int l, int m, int r) {
 
 	// number of array
@@ -91,4 +91,4 @@ int main() {
 		delete[] arr, result;
 	}
 	return 0;
-}
+}*/
