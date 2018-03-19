@@ -1,5 +1,0 @@
-﻿  2108.cpp
-d:\program files\visual studio project\acm_study\9_try_sort\9_try_sort\2108.cpp(31): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\program files\visual studio project\acm_study\9_try_sort\9_try_sort\2108.cpp(32): warning C4244: 'return': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  9_Try_sort.vcxproj -> D:\Program Files\visual studio project\ACM_study\9_Try_sort\Debug\9_Try_sort.exe
-  9_Try_sort.vcxproj -> D:\Program Files\visual studio project\ACM_study\9_Try_sort\Debug\9_Try_sort.pdb (Full PDB)
