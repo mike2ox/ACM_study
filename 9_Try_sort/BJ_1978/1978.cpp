@@ -1,6 +1,7 @@
 /*
 *	author : quisutdeus7
 *	BJO : no. 1978
+*	status : unsolved
 */
 #include<iostream>
 using namespace std;
@@ -8,7 +9,6 @@ using namespace std;
 int N;
 int n_arr[1000] = {};
 int check =0;
-
 
 int main() {
 
@@ -25,11 +25,11 @@ int main() {
 				if (n_arr[b] % c == 0)
 					break;
 			}
+			//number of prime
 			check++;
 		}
 	}
 	cout << check;
-
 
 	return 0;
 }
