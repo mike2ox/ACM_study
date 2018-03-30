@@ -7,18 +7,37 @@
 using namespace std;
 
 int n_T;		//number of testcase
+int R, C;		//row, column
+char hyeok[21][21] = {};
+bool check = false;
 
 int main() {
 	
-
 	cin >> n_T;
+	for (int i = 0; i < n_T; i++) {
+		cin >> R >> C;
+		
+		for (int j = 0; j < R; j++)
+			cin >> hyeok[j];
+
+		//check @ char
+		for (int j = 0; j < R; j++) {
+			for (int k = 0; k < C; k++) {
+				if (hyeok[i][j] == '@')
+					check = true;
+			}
+			if (check)
+				break;
+		}
+		
 
 	
-
-	for (int j = 0; j < n_T; j++) {
 		
-		cout << '#' << j + 1 << " "  << '\n';
-		
+		if (check)
+			cout << '#' << i + 1 << "YES\n";
+		else
+			cout << '#' << i + 1 << "NO\n"; 
+			
 	}
 
 	return 0;
