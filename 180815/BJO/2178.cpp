@@ -14,26 +14,11 @@ bool ckpt[10001][1001] = {false,};// 탐색여부
 
 int cnt=0
 
-void DFS(int n, int m){
-    if (maze[n][m]=='0' || ckpt[n][m])
-        return;
-    ckpt[n][m] = true;
+void BFS(int n, int m){
+    queue<pair<int, int>> list;
     
-    if(n == N&&m==M){
-        if(min_cnt>=cnt)
-            min_cnt = cnt;
-        return;
-    }
 
-    if(m!=1)
-        DFS(n, m-1);
-    if(n!=1)
-        DFS(n-1, m);
-    if(m!=M)
-        DFS(n, m+1);
-    if(n!=N)
-        DFS(n+1, m);
-        cnt++;
+    
 }
 
 int main(){
@@ -45,7 +30,7 @@ int main(){
             cin >> maze[i][j];
     }
 
-    DFS(1,1);      //시작점부터 시작
+    BFS(1,1);      //시작점부터 시작
     cout << min_cnt;
     return 0;  
 }
