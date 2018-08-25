@@ -10,6 +10,7 @@
 #include<algorithm>
 using namespace std;
 
+//// book copy
 class InterestingParty{
 
     public:
