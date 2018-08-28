@@ -26,15 +26,6 @@ class InterestingParty{
                     if(second[i] == first[j]) s++;
                     if(second[i]==second[j])s++;
                 }
-            ans = max(f, ans);
-            ans = max(s, ans);
-            }
-
-            return ans;
-        }
-};
-//// book copy
-
 #define MAX(a,b) ((a>b)? a:b)
 
 string first[4] ={"fishing", "gardening", "swimming", "fising"};
