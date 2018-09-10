@@ -29,7 +29,7 @@ int main(){
             graph[a].push_back(b);
             graph[b].push_back(a);
             graph[a][b] = graph[b][a] = 1;   
-        }q
+        }
         bool ck = BFS(graph,1);
         if(ck)
             cout << "YES" << '\n';
