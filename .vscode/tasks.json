@@ -12,7 +12,7 @@
                 "${file}",
                 "-g",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}"
             ],
             "group": "build",
 
@@ -69,7 +69,7 @@
             "command": "cmd",
             "group": "test",
             "args": [
-                "/C", "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "/C", "${fileDirname}\\${fileBasenameNoExtension}"
             ]
     
         }
