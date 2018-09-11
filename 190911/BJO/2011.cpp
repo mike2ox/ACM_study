@@ -12,7 +12,7 @@ using namespace std;
 
 char crypt[5001];
 string crypt2;
-int dp[5001] = {};
+int dp[5010] = {};
 int main() {
 
 	cin >> crypt;
@@ -20,19 +20,21 @@ int main() {
 	crypt2 = crypt;
 	dp[0] = 1;
 	dp[1] = 1;
-	
-	for (int i = 2; i <= crypt2.size(); i++) {
-		if (crypt[i-1] > '0') {
+
+	int cryptsize = crypt2.size();
+
+	for (int i = 2; i <= cryptsize; i++) {
+		if (crypt[i - 1] > '0') {
 			dp[i] = dp[i - 1] % divide;
 		}
 
 		int a = (crypt[i - 1 - 1] - '0') * 10 + crypt[i - 1] - '0';
 
 		if (10 <= a && a <= 26)
-			dp[i] = (dp[i - 1] + dp[i - 2]) % divide;
+			dp[i] = (dp[i] + dp[i - 2]) % divide;
 	}
 
-	cout << dp[crypt2.size()] << '\n';
+	cout << dp[cryptsize] << '\n';
 
 	return 0;
 }
