@@ -2,7 +2,6 @@
 *.sln
 *.db
 Debug/
-*.vcxproj
 *.filters
 *.vs/
 180813/swex/2058
@@ -10,3 +9,4 @@ Debug/
 180813/swex/2072
 *.exe
 swexpert*
+*vcxproj*
